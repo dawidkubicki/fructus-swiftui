@@ -11,6 +11,9 @@
 		1295A0B325EE44080052BCB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295A0B225EE44080052BCB2 /* ContentView.swift */; };
 		1295A0B525EE44090052BCB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1295A0B425EE44090052BCB2 /* Assets.xcassets */; };
 		1295A0B825EE44090052BCB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1295A0B725EE44090052BCB2 /* Preview Assets.xcassets */; };
+		1295A0C525EE493E0052BCB2 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295A0C425EE493E0052BCB2 /* FruitCardView.swift */; };
+		1295A0C825EE4CF20052BCB2 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295A0C725EE4CF20052BCB2 /* StartButtonView.swift */; };
+		1295A0CB25EE58750052BCB2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295A0CA25EE58750052BCB2 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		1295A0B425EE44090052BCB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1295A0B725EE44090052BCB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1295A0B925EE44090052BCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1295A0C425EE493E0052BCB2 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		1295A0C725EE4CF20052BCB2 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		1295A0CA25EE58750052BCB2 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,8 @@
 		1295A0AF25EE44080052BCB2 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				1295A0B025EE44080052BCB2 /* FructusApp.swift */,
-				1295A0B225EE44080052BCB2 /* ContentView.swift */,
+				1295A0C325EE490E0052BCB2 /* View */,
+				1295A0C125EE48E40052BCB2 /* App */,
 				1295A0B425EE44090052BCB2 /* Assets.xcassets */,
 				1295A0B925EE44090052BCB2 /* Info.plist */,
 				1295A0B625EE44090052BCB2 /* Preview Content */,
@@ -67,6 +73,25 @@
 				1295A0B725EE44090052BCB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1295A0C125EE48E40052BCB2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1295A0B025EE44080052BCB2 /* FructusApp.swift */,
+				1295A0B225EE44080052BCB2 /* ContentView.swift */,
+				1295A0CA25EE58750052BCB2 /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1295A0C325EE490E0052BCB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1295A0C425EE493E0052BCB2 /* FruitCardView.swift */,
+				1295A0C725EE4CF20052BCB2 /* StartButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1295A0C525EE493E0052BCB2 /* FruitCardView.swift in Sources */,
+				1295A0C825EE4CF20052BCB2 /* StartButtonView.swift in Sources */,
 				1295A0B325EE44080052BCB2 /* ContentView.swift in Sources */,
+				1295A0CB25EE58750052BCB2 /* OnboardingView.swift in Sources */,
 				1295A0B125EE44080052BCB2 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dawidkubicki.Fructus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dawidkubicki.Fructus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
