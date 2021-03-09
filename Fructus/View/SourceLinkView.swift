@@ -16,7 +16,8 @@ struct SourceLinkView: View {
                 Link("Wikipedia", destination: URL(string: "https://wikipedia.org")!)
                 Image(systemName: "arrow.up.right.square")
             }
-        } .font(.footnote)
+        } .font(.footnote
+        )
     }
 }
 
