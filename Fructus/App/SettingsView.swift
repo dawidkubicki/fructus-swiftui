@@ -42,6 +42,15 @@ struct SettingsView: View {
                     //MARK: - Section 2
                     
                     //MARK: - Section 3
+                    GroupBox(
+                    label:
+                        SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
+                    ) {
+                        SettingsRowView(name: "Developer", content: "Dawid")
+                        SettingsRowView(name: "Designer", content: "Dawid")
+                        SettingsRowView(name: "Ccompatibility", content: "iOS 14")
+                        SettingsRowView(name: "Website", linkLabel: "Skytask website", linkDestinantion: "skytask.io")
+                    }//: Box
                     
                 }//: VStack
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
