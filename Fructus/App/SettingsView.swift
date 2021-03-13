@@ -11,6 +11,7 @@ struct SettingsView: View {
     
     //MARK: - Properties
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isOnBoarding") var isOnBoarding: Bool = false
     
     //MARK: - Body
     
@@ -40,6 +41,24 @@ struct SettingsView: View {
                     }
                     
                     //MARK: - Section 2
+                    GroupBox(
+                        label:
+                        SettingsLabelView(labelText: "Customization", labelImage: "paintbrush")
+                    ) {
+                        Divider()
+                            .padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart, the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: $isOnBoarding) {
+                            Text("Restart".uppercased())
+                        }
+                    }
                     
                     //MARK: - Section 3
                     GroupBox(
